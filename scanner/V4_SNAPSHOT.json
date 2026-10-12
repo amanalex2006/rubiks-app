@@ -1,0 +1,24 @@
+{
+  "source_directory": "D:\\ai rubics\\v4",
+  "snapshot_date": "2026-10-12",
+  "hash_algorithm": "SHA-256",
+  "description": "User-supplied local v4 scanner snapshot before integration adaptation; no Git commit is asserted.",
+  "ancestry": {
+    "repository": "https://github.com/amanalex2006/rubiksssscannnnn",
+    "original_import_commit": "d81969bb24ad19791c71045dbb12db9c4f1bcff4",
+    "original_author": "Aaron Wang",
+    "original_project": "https://github.com/aaron-wang/rcube-scan"
+  },
+  "excluded_generated_files": [
+    "src/cube_state.json"
+  ],
+  "files": {
+    "src/main.py": "02dcda8674a0bfa7a2d9a0fc0ac3d9fded331d249229065ce5e84a99a3e77032",
+    "src/grid_detect.py": "1c2c1bbe3ac60c34c4a5908f7c308bb47a8b68aa30cdbd85811dd6e4669ccb85",
+    "src/cube_state.py": "194a50d061e822060c189f96a9fa5779feccaabc9f9798e61ef4d83c0d3ad4d6",
+    "src/constants.py": "68f4febd83cb58617ef6337c205cdabad9685303b23529876cf67093b9eab376",
+    "src/config.json": "66cfb9f00687aa0193e6a5f057531d93a0e8014f3a0c68ec1ec02d1fffbaedac",
+    "README.md": "27a31139a810cea34a886456f33701a77039fc7539f1db45a12afe7383b86ccc",
+    "requirements.txt": "641a71be4ba2a13dc9efda3e1cd815d1b310d686da5187a3ea18c40af4a30ef1"
+  }
+}

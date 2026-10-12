@@ -1,0 +1,121 @@
+{
+    "hasCircleCenter": "true",
+    "colors": {
+        "yellow": {
+            "lower_bound": [
+                19,
+                110,
+                80
+            ],
+            "upper_bound": [
+                40,
+                255,
+                255
+            ]
+        },
+        "green": {
+            "lower_bound": [
+                65,
+                120,
+                20
+            ],
+            "upper_bound": [
+                96,
+                255,
+                255
+            ]
+        },
+        "blue": {
+            "lower_bound": [
+                100,
+                97,
+                30
+            ],
+            "upper_bound": [
+                123,
+                255,
+                255
+            ]
+        },
+        "red": {
+            "lower_bound": [
+                0,
+                135,
+                73
+            ],
+            "upper_bound": [
+                8,
+                255,
+                255
+            ],
+            "lower_bound2": [
+                170,
+                50,
+                73
+            ],
+            "upper_bound2": [
+                180,
+                255,
+                255
+            ]
+        },
+        "white": {
+            "lower_bound": [
+                25,
+                2,
+                100
+            ],
+            "upper_bound": [
+                105,
+                40,
+                255
+            ]
+        },
+        "orange": {
+            "lower_bound": [
+                8,
+                100,
+                100
+            ],
+            "upper_bound": [
+                26,
+                255,
+                255
+            ]
+        }
+    },
+    "contours": {
+        "min_area": 500,
+        "max_square_edge": 130,
+        "lenient_square_ratio": 1.3,
+        "strict_square_ratio": 1.2,
+        "circle_bypass_scale": 1.1,
+        "angle_epsilon": 1.0,
+        "center_epsilon": 0.07
+    },
+    "scan": {
+        "min_total_reading_buffer": 5,
+        "max_total_reading_buffer": 20,
+        "min_color_confidence_threshold": 0.59,
+        "min_color_count_threshold": 5
+    },
+    "camera": {
+        "low_res_camera": 0
+    },
+    "detection_mode": "grid",
+    "grid": {
+        "guide_fraction": 0.55,
+        "auto_locate": false,
+        "tracking": true,
+        "red_orange_hue": 3.5,
+        "white_s_max": 60,
+        "white_v_min": 90,
+        "min_cell_confidence": 0.8,
+        "min_saturation": 70,
+        "min_value": 40,
+        "max_aspect_ratio": 1.3,
+        "min_fill": 0.75,
+        "min_side_fraction": 0.12,
+        "close_kernel_fraction": 0.045
+    }
+}

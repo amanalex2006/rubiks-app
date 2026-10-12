@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Cube Studio · 3D steps</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Cube Studio">
+      <span class="brand-cube" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>Cube Studio <span class="brand-section">/ 3D steps</span></span>
+    </a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
+  </header>
+  <main id="top">
+    <section class="intro">
+      <div><p class="eyebrow">YOUR CUBE, ONE TURN AT A TIME</p><h1>Follow the solution.</h1>
+      <p class="intro-text">Choose either solver. Use the arrows to turn each face, or replay a move until it makes sense.</p></div>
+      <div class="session-status"><span class="status-dot"></span><span id="session-status" role="status">Loading your cube…</span></div>
+    </section>
+    <div id="page-error" class="page-error" role="alert" hidden></div>
+    <section class="solver-grid" aria-label="Solution comparison">
+      <article class="solver-panel" id="panel-kociemba" data-solver="kociemba" tabindex="-1">
+        <header class="panel-heading"><div><span class="panel-overline">SOLUTION 01</span><h2>Kociemba</h2></div><span class="solver-badge" id="badge-kociemba">LOADING</span></header>
+        <p class="solver-detail" id="detail-kociemba">Preparing your verified solution.</p>
+        <div class="cube-stage" id="stage-kociemba"><div class="stage-message">Loading 3D cube…</div></div>
+        <div class="stage-caption"><span>Drag to look around</span><span class="step-counter" id="counter-kociemba">0 / 0 moves</span></div>
+        <div class="current-step" id="current-kociemba" aria-live="polite"><span class="current-label">STARTING POSITION</span><strong>Your cube</strong><p>Blue on top · red in front.</p></div>
+        <div class="step-controls" aria-label="Kociemba step controls">
+          <button id="previous-kociemba" type="button" aria-label="Previous Kociemba move" disabled><span aria-hidden="true">&lt;</span> Previous</button>
+          <button id="replay-kociemba" type="button" aria-label="Replay current Kociemba twist" disabled><span aria-hidden="true">↻</span> Replay twist</button>
+          <button id="next-kociemba" class="primary" type="button" aria-label="Next Kociemba move" disabled>Next <span aria-hidden="true">&gt;</span></button>
+        </div>
+        <div class="notation-heading"><h3>Move sequence</h3><button class="text-button" id="reset-kociemba" type="button" disabled>Reset to start</button></div>
+        <ol class="move-list" id="moves-kociemba" aria-label="Kociemba move sequence"></ol>
+        <p class="solver-metrics" id="metrics-kociemba"></p>
+      </article>
+      <article class="solver-panel" id="panel-java" data-solver="java" tabindex="-1">
+        <header class="panel-heading"><div><span class="panel-overline">SOLUTION 02</span><h2>Java BiBFS</h2></div><span class="solver-badge" id="badge-java">LOADING</span></header>
+        <p class="solver-detail" id="detail-java">Waiting for the Java solver.</p>
+        <div class="cube-stage" id="stage-java"><div class="stage-message">Loading 3D cube…</div></div>
+        <div class="stage-caption"><span>Drag to look around</span><span class="step-counter" id="counter-java">0 / 0 moves</span></div>
+        <div class="current-step" id="current-java" aria-live="polite"><span class="current-label">STARTING POSITION</span><strong>Your cube</strong><p>Blue on top · red in front.</p></div>
+        <div class="step-controls" aria-label="Java BiBFS step controls">
+          <button id="previous-java" type="button" aria-label="Previous Java move" disabled><span aria-hidden="true">&lt;</span> Previous</button>
+          <button id="replay-java" type="button" aria-label="Replay current Java twist" disabled><span aria-hidden="true">↻</span> Replay twist</button>
+          <button id="next-java" class="primary" type="button" aria-label="Next Java move" disabled>Next <span aria-hidden="true">&gt;</span></button>
+        </div>
+        <div class="notation-heading"><h3>Move sequence</h3><button class="text-button" id="reset-java" type="button" disabled>Reset to start</button></div>
+        <ol class="move-list" id="moves-java" aria-label="Java move sequence"></ol>
+        <p class="solver-metrics" id="metrics-java"></p>
+      </article>
+    </section>
+    <section class="legend" aria-label="Cube face color guide"><h3>Keep the same orientation</h3><div id="face-legend"></div><p>Clockwise is viewed directly toward the face being turned. A prime (′) means counterclockwise; 2 means a half turn.</p></section>
+    <footer><span>Cube Studio</span><span>Your cube and solutions stay on this computer.</span></footer>
+  </main>
+</body>
+</html>

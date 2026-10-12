@@ -1,0 +1,18 @@
+{
+  "name": "cube-studio-viewer-build",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Build the offline Cube Studio viewer from the preserved cubing.js checkout.",
+  "scripts": {
+    "build": "node ../scripts/build_viewer.mjs"
+  },
+  "dependencies": {
+    "@cubing/lazy-promise": "0.1.3",
+    "random-uint-below": "3.3.0",
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.1"
+  }
+}
